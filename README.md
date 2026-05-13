@@ -64,4 +64,4 @@ pip install openai pandas openpyxl Pillow
 - 跳过已成功完成的任务（所有活动 score 非空）
 - **重新执行**之前失败的任务（score 为空的记录）
 
-运行结束后 checkpoint 文件会自动清理。
+运行结束后 会保留checkpoint 文件。
