@@ -264,6 +264,6 @@ with pd.ExcelWriter(EXCEL_PATH, engine="openpyxl") as writer:
 print(f"\n结果已保存至: {EXCEL_PATH}")
 print(f"共 {len(rows)} 条记录，{len(years)} 个 sheet")
 
-# 清理断点文件
-CHECKPOINT_PATH.unlink(missing_ok=True)
-print("断点文件已清理")
+# 保留断点文件，便于检查执行情况
+# CHECKPOINT_PATH.unlink(missing_ok=True)
+print(f"断点文件已保留: {CHECKPOINT_PATH}")
